@@ -16,6 +16,8 @@ Trucos:
 2. git log --oneline --decorate --all --graph
 3. git status -s
 
+
+Al texto en Markdown puedes añadirle formato como **negrita** o *
 Creando alias globales
 
 1. git config --global alias.lg "log --oneline --decorate --all --graph"
@@ -24,4 +26,3 @@ Creando alias globales
     - git commit -am "más comandos agregados"
         1. git commit --amend
         2. git reset --mixed f52f3da
-Al texto en Markdown puedes añadirle formato como **negrita** o *
