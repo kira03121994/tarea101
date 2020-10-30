@@ -20,4 +20,7 @@ git pull es una abreviación de git fetch seguido de git merge FETCH_HEAD.
 
 Es decir, **git fetch trae los cambios, pero los deja en otro branch, hasta que se hace el git merge para traerlos al branch local**.
 
-3. 
+3. ¿Cómo cambiar el mensaje de un commit?
+>Acabo de hacer un commit:
+git commit -m "este es un comentario"
+>Si vuelvo a escribir git commit -m "un nuevo comentario" hará otro commit en lugar de modificar el que ya hice.
