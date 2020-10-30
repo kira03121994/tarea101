@@ -51,8 +51,19 @@ Buscas en el log de git cuál es el commit al que quieres regresar:
  >Puedes volver a una revisión antigua usando checkout y pasando el hash del commit. Por ejemplo:
 
 **git checkout ab25f1ln2b4o3a9c4u1v6k4n1m7 **
-No olvidar el punto al final. 
+>No olvidar el punto al final. 
 También puedes descartar cambios mediante reset pasándole el numero de commits. Por ejemplo, para descartar los últimos 3 commits:
 **git reset --hard HEAD~3**
 
 La diferencia entre checkout y reset es que en éste último se descartan las revisiones, mientras que con checkout se preservan.
+
+8. ¿Cuál es la diferencia entre 'git rebase' y 'git merge'?
+
+>Cuando haces git **rebase**:
+
+Los commits locales se eliminan de la rama temporalmente.
+-se ejecuta un **git pull**.
+-los commits locales se insertan nuevamente.
+-Esto quiere decir que todos tus commits locales aparecen al final, después de los commits remotos. 
+
+Esto es, si haces git log, los commits de la rama que has rebasado aparecen como si fueran más antiguos, independientemente de cuándo se hicieran
