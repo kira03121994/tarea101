@@ -34,3 +34,9 @@ Buscas en el log de git cuál es el commit al que quieres regresar:
 
 **git log**
 
+5. ¿Cómo revertir un commit, si ya subí los cambios al origen?
+
+>Tienes que hacer de nuevo el comit, para eso puedes ver cómo acá, luego tienes que hacer *push* forzando tu versión:
+
+**git push -f origin master**
+
