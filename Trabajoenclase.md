@@ -70,3 +70,20 @@ Esto es, si haces git log, los commits de la rama que has rebasado aparecen como
 
 >Supongamos que tienes 3 commits A,B,C:
 ![alt tag](https://i.stack.imgur.com/lJRq7.png)
+
+>Entonces viene Daniel y crea un commit D. Luego Enrique crea un commit E:
+![alt tag](https://i.stack.imgur.com/pK7Zb.png)
+
+>Obviamente, este conflicto debe ser resuelto de alguna forma. Para ello hay dos maneras:
+
+***MERGE:***
+![alt tag](https://i.stack.imgur.com/9Ul5w.png)
+
+Ambos commits D y E aún están allí, pero creamos un commit de unión (merge commit) M que hereda los cambios de ambos commits D y E. Sin embargo, esto crea la estructura en forma de diamante, que a mucha gente confunde.
+
+***REBASE:***
+![alt tag](https://i.stack.imgur.com/TvXuJ.png)
+
+Creamos un commit R, cuyo contenido es idéntico al del commit M descrito arriba. Sin embargo, nos cargamos el commit E como si nunca hubiera existido (se ve con los puntitos, en la línea evanescente). De acuerdo con esta anulación, E debería ser un commit local de Enrique y no debería haber hecho push a ningún repositorio. La ventaja de este método es que se evita la forma de diamante y el historial permanece lineal, que es algo que la mayoría de los desarrolladores agradecen.
+
+
