@@ -40,3 +40,8 @@ Buscas en el log de git cuál es el commit al que quieres regresar:
 
 **git push -f origin master**
 
+6. ¿Cómo ignorar los cambios de permisos en git (chmod)?
+
+>Para ignorar los cambios de permisos en git, se realiza con:
+
+**% git config core.fileMode false**
