@@ -69,4 +69,4 @@ Los commits locales se eliminan de la rama temporalmente.
 Esto es, si haces git log, los commits de la rama que has rebasado aparecen como si fueran más antiguos, independientemente de cuándo se hicieran
 
 >Supongamos que tienes 3 commits A,B,C:
-![alt tag] (https://i.stack.imgur.com/lJRq7.png)
+![alt tag](https://i.stack.imgur.com/lJRq7.png)
