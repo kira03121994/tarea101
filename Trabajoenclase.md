@@ -24,3 +24,13 @@ Es decir, **git fetch trae los cambios, pero los deja en otro branch, hasta que 
 >Acabo de hacer un commit:
 git commit -m "este es un comentario"
 >Si vuelvo a escribir git commit -m "un nuevo comentario" hará otro commit en lugar de modificar el que ya hice.
+
+4. ¿Como regresar un repositorio a un commit especifico?
+>Sólo debes hacer *git checkout commitC* donde **commitC** es el hash de dicho commit.
+
+Ejemplo:
+
+Buscas en el log de git cuál es el commit al que quieres regresar:
+
+**git log**
+
