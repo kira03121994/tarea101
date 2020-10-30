@@ -86,4 +86,15 @@ Ambos commits D y E aún están allí, pero creamos un commit de unión (merge c
 
 Creamos un commit R, cuyo contenido es idéntico al del commit M descrito arriba. Sin embargo, nos cargamos el commit E como si nunca hubiera existido (se ve con los puntitos, en la línea evanescente). De acuerdo con esta anulación, E debería ser un commit local de Enrique y no debería haber hecho push a ningún repositorio. La ventaja de este método es que se evita la forma de diamante y el historial permanece lineal, que es algo que la mayoría de los desarrolladores agradecen.
 
+¿Cómo ver qué archivos son diferentes entre 2 ramas con Git?
+
+>Básicamente el comando para ver las diferencias entre dos branches es:
+
+**$ git diff branch1..branch2**
+
+>Para listar qué archivos han cambiado entre dos branches puedes usar:
+
+**$ git diff --name-status branch1..branch2**
+
+
 
